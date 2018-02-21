@@ -4,6 +4,7 @@
         <h1><%= link_to post.title, post_path(post) %></h1>
         <p>by <%= post.user.fullname %></p>
         <%= image_tag post.picture.small.url %>
+        <br>
         <p><%= post.content[0..50] %>...</p>
 
     </div>
