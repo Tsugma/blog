@@ -1,0 +1,70 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.container a i {
+    color: black;
+}
+
+.container img {
+    max-height: 500px;
+}
+
+.container h1 {
+    font-size: 30px;
+}
+
+.container .post-preview {
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.container .post-preview img {
+    max-height: 200px;
+}
+
+.container .post-preview h1 {
+    font-size: 22px;
+}
+
+.container .post-controls {
+    margin-top: 25px;
+}
+
+.container .nav-controls {
+    margin-top: 50px;
+}
+
+.container textarea {
+    min-height: 180px;
+}
+
+.container .comment-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container .comment-list .comment-author {
+    font-weight: bold;
+}

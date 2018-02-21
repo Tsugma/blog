@@ -1,0 +1,11 @@
+<div class="row">
+    <% @posts.each do |post| %>
+    <div class="col-4 post-preview">
+        <h1><%= link_to post.title, post_path(post) %></h1>
+        <p>by <%= post.user.fullname %></p>
+        <%= image_tag post.picture.small.url %>
+        <p><%= post.content[0..50] %>...</p>
+
+    </div>
+    <% end %>
+</div>
