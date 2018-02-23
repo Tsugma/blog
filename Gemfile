@@ -28,13 +28,24 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+
 # Use Puma as the web server
 gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Use 'social-share-button' for SNS post sharing
+gem 'social-share-button'
+
+#Use 'activeadmin' for admin panel
+gem 'activeadmin'
+
+# Plus integrations with:
 gem 'devise'
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
 
 gem 'carrierwave', '~> 1.0'
 

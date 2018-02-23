@@ -38,6 +38,8 @@ class PostsController < ApplicationController
         @post.destroy
         redirect_to posts_path
     end
+
+    #What if this was created in healpers and then imported here?
     private
     def post_params
         params.require(:post).permit(:title, :content, :picture, :published_date)

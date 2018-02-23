@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Blog</a>
+        <a class="navbar-brand" href="/home">Blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <%= link_to '<i class="fa fa-home" aria-hidden="true"></i> Home'.html_safe, root_path, :class => "nav-link" %>
+                    <%= link_to '<i class="fa fa-home" aria-hidden="true"></i> Home'.html_safe, posts_path, :class => "nav-link" %>
                 </li>
                 <% if user_signed_in? %>
                 <li class="nav-item">
@@ -31,7 +31,7 @@
             <ul class="navbar-nav navbar-right">
                 <% if user_signed_in? %>
                 <li class="nav-item">
-                    <%= link_to '<i class="fa fa-user" aria-hidden="true"></i> Profil'.html_safe, edit_user_registration_path, :class => "nav-link" %>
+                    <%= link_to '<i class="fa fa-user" aria-hidden="true"></i> Profile'.html_safe, edit_user_registration_path, :class => "nav-link" %>
                 </li>
                 <li class="nav-item">
                     <%= link_to '<i class="fa fa-sign-out" aria-hidden="true"></i> Logout'.html_safe, destroy_user_session_path, :method => :delete, :class => "nav-link" %>
@@ -52,6 +52,7 @@
         <%= yield %>
     </div>
 </body>
+
 <%= render partial: "footer" %>
 
 </html>
